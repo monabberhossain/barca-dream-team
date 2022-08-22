@@ -4,16 +4,28 @@ body{
     background-color: #151515;
 }
 
+.text-orange-red{
+    color: orangered;    
+}
+
+.bg-blue{
+    background-color: #066EDB;
+}
+
+button:hover{
+    border: 3px solid #052565;
+}
+
 .title{
     font-size: 68px;
     color: orangered;
 }
 hr{
-    color: orangered;
+    color: #066EDB;
     margin-bottom: 30px;
 }
 .card{
-    border: 1px solid orangered;
+    border: 1px solid #052565;
 }
 
 .emblem{
@@ -23,6 +35,10 @@ hr{
 .ball{
 }
 
-.per-player-field{
-    border: 2px solid orangered;
+.perfect-fit{
+    max-width: inherit;
+}
+
+.text-box{    
+    border: 2px solid #066EDB;
 }
