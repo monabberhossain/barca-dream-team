@@ -1,4 +1,6 @@
 body{
+    margin: 0;
+    padding: 0;
     background-color: #151515;
 }
 
@@ -6,8 +8,12 @@ body{
     font-size: 68px;
     color: orangered;
 }
+hr{
+    color: orangered;
+    margin-bottom: 30px;
+}
 .card{
-    border: 1px solid gray;
+    border: 1px solid orangered;
 }
 
 .emblem{
@@ -15,4 +21,8 @@ body{
 }
 
 .ball{
+}
+
+.per-player-field{
+    border: 2px solid orangered;
 }
