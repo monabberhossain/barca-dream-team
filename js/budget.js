@@ -21,7 +21,7 @@ calculateTotalButton.addEventListener('click', function () {
     const managerAmount = parseFloat(managerSalary.value);
     const coachSalary = document.getElementById("coach-salary");
     const coachAmount = parseFloat(coachSalary.value);
-    if((managerAmount !== '' && managerAmount !== null) && (coachAmount !== '' && coachAmount !== null)){
+    if((managerAmount.value !== '' && managerAmount.value !== null) && (coachAmount.value !== '' && coachAmount.value !== null)){
         const totalExpencesAmount = playerExpencesAmount + managerAmount + coachAmount;
         const totalExpences = document.getElementById('total-expences');
         totalExpences.innerText = totalExpencesAmount;
