@@ -6,13 +6,22 @@ calculateButton.addEventListener('click', function () {
         const perPlayerAmount = parseFloat(perPlayer.value);
         const playerExpencesAmount = playerList.length * perPlayerAmount;
         const playerExpences = document.getElementById('player-expences');
-        playerExpencesAmount.innerText = playerExpences;
+        playerExpences.innerText = playerExpencesAmount;
     }
     else{
         alert('Please input the amount of per player!');
     }   
 });
 
-const totalExpencesButton calculateTotalButton =  document.getElementById('calculate-total');
+const calculateTotalButton =  document.getElementById('calculate-total');
 calculateTotalButton.addEventListener('click', function () {
-    const playerList = document.getElementById("player-list")
+    const playerExpences = document.getElementById('player-expences');
+    const playerExpencesAmount = parseFloat(playerExpences.innerText);
+    const managerSalary = document.getElementById("manager-salary");
+    const managerAmount = parseFloat(managerSalary.value);
+    const coachSalary = document.getElementById("coach-salary");
+    const coachAmount = parseFloat(coachSalary.value);
+    const totalExpencesAmount = playerExpencesAmount + managerAmount + coachAmount;
+    const totalExpences = document.getElementById('total-expences');
+    totalExpences.innerText = totalExpencesAmount;
+})
