@@ -2,14 +2,14 @@ const calculateButton = document.getElementById('calculate-button');
 calculateButton.addEventListener('click', function () {
     const playerList = document.getElementById("player-list").children;
     const perPlayer = document.getElementById('per-player');
-    if(perPlayer.value != '' && perPlayer.value != null){
+    if(perPlayer.value !== '' && perPlayer.value !== null){
         const perPlayerAmount = parseFloat(perPlayer.value);
         const playerExpencesAmount = playerList.length * perPlayerAmount;
         const playerExpences = document.getElementById('player-expences');
         playerExpences.innerText = playerExpencesAmount;
     }
     else{
-        alert('Please input the amount of per player!');
+        alert('Warning! Please provide valid input.');
     }   
 });
 
@@ -21,7 +21,13 @@ calculateTotalButton.addEventListener('click', function () {
     const managerAmount = parseFloat(managerSalary.value);
     const coachSalary = document.getElementById("coach-salary");
     const coachAmount = parseFloat(coachSalary.value);
-    const totalExpencesAmount = playerExpencesAmount + managerAmount + coachAmount;
-    const totalExpences = document.getElementById('total-expences');
-    totalExpences.innerText = totalExpencesAmount;
+    if((managerAmount !== '' && managerAmount !== null) && (coachAmount !== '' && coachAmount !== null)){
+        const totalExpencesAmount = playerExpencesAmount + managerAmount + coachAmount;
+        const totalExpences = document.getElementById('total-expences');
+        totalExpences.innerText = totalExpencesAmount;
+    }
+    else{
+        alert('Warning! Please provide valid input.');
+    }
+    
 })

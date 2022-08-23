@@ -12,7 +12,7 @@ selectButtonOne.addEventListener('click', function() {
         selectButtonOne.style.backgroundColor = 'gray';
     }
     else{
-        alert('You can not select more than five players');
+        showAlert();
     }
 });
 
@@ -30,7 +30,7 @@ selectButtonTwo.addEventListener('click', function() {
         selectButtonTwo.style.backgroundColor = 'gray';
     }
     else{
-        alert('You can not select more than five players');
+        showAlert();
     }
 });
 
@@ -48,7 +48,7 @@ selectButtonThree.addEventListener('click', function() {
         selectButtonThree.style.backgroundColor = 'gray';
     }
     else{
-        alert('You can not select more than five players');
+        showAlert();
     }
 });
 
@@ -66,7 +66,7 @@ selectButtonFour.addEventListener('click', function() {
         selectButtonFour.style.backgroundColor = 'gray';
     }
     else{
-        alert('You can not select more than five players');
+        showAlert();
     }
 });
 
@@ -84,7 +84,7 @@ selectButtonFive.addEventListener('click', function() {
         selectButtonFive.style.backgroundColor = 'gray';
     }
     else{
-        alert('You can not select more than five players');
+        showAlert();
     }
 });
 
@@ -102,7 +102,7 @@ selectButtonSix.addEventListener('click', function() {
         selectButtonSix.style.backgroundColor = 'gray';
     }
     else{
-        alert('You can not select more than five players');
+        showAlert();
     }
 });
 
@@ -120,7 +120,7 @@ selectButtonSeven.addEventListener('click', function() {
         selectButtonSeven.style.backgroundColor = 'gray';
     }
     else{
-        alert('You can not select more than five players');
+        showAlert();
     }
 });
 
@@ -138,7 +138,7 @@ selectButtonEight.addEventListener('click', function() {
         selectButtonEight.style.backgroundColor = 'gray';
     }
     else{
-        alert('You can not select more than five players');
+        showAlert();
     }
 });
 
@@ -156,7 +156,7 @@ selectButtonNine.addEventListener('click', function() {
         selectButtonNine.style.backgroundColor = 'gray';
     }
     else{
-        alert('You can not select more than five players');
+        showAlert();
     }
 });
 
@@ -174,7 +174,7 @@ selectButtonTen.addEventListener('click', function() {
         selectButtonTen.style.backgroundColor = 'gray';
     }
     else{
-        alert('You can not select more than five players');
+        showAlert();
     }
 });
 
@@ -192,7 +192,7 @@ selectButtonEleven.addEventListener('click', function() {
         selectButtonEleven.style.backgroundColor = 'gray';
     }
     else{
-        alert('You can not select more than five players');
+        showAlert();
     }
 });
 
@@ -210,6 +210,6 @@ selectButtonTwelve.addEventListener('click', function() {
         selectButtonTwelve.style.backgroundColor = 'gray';
     }
     else{
-        alert('You can not select more than five players');
+        showAlert();
     }
 });
