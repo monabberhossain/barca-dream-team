@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barca's Dream Team</title>
+    <title>Barca's Dream Five!</title>
 
     <!-- Bootstrap CDN Link: CSS file -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -221,14 +221,14 @@
                             <label for="perPlayer" class="text-white">Per Player</label>
                         </div>
                         <div class="col-6">
-                            <input type="text" id="perPlayer" class="text-box perfect-fit per-player-field">
+                            <input type="text" id="per-player" class="text-box perfect-fit per-player-field">
                         </div>
-                        <button class="text-white fs-5 fw-semibold bg-blue">Calculate</button>
+                        <button id="calculate-button" class="text-white fs-5 fw-semibold bg-blue">Calculate</button>
                         <div class="col-8">
                             <label for="playerExpences" class="text-white">Player Expences</label>
                         </div>
                         <div class="col-4">
-                            <h3 id="playerExpences" class="text-orange-red player-expences-field">$<span>5000</span>
+                            <h3 class="text-orange-red player-expences-field">$<span id="player-expences">00</span>
                             </h3>
                         </div>
                         <div class="col-6">
@@ -243,12 +243,12 @@
                         <div class="col-6">
                             <input type="text" id="coach" class="text-box perfect-fit coach-field">
                         </div>
-                        <button class="text-white fs-5 fw-semibold bg-blue">Calculate Total</button>
+                        <button id="calculate-total" class="text-white fs-5 fw-semibold bg-blue">Calculate Total</button>
                         <div class="col-8">
                             <label for="totalExpences" class="text-white">Total Expences</label>
                         </div>
                         <div class="col-4">
-                            <h3 id="totalExpences" class="text-orange-red total-expences-field">$<span>9000</span></h3>
+                            <h3 id="total-expences" class="text-orange-red total-expences-field">$<span>00</span></h3>
                         </div>
                     </div>
                 </div>
@@ -267,9 +267,10 @@
     </footer>
     <!-- Footer Section End -->
 
-    <!-- Custom Script Link: JS File -->
+    <!-- Custom Scripts Link: JS Files -->
     <script src="js/select.js"></script>
-
+    <script src="js/budget.js"></script>
+    
     <!-- Bootstrap CDN Link: JS file -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
